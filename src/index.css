@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('./reset.css');
+
+body {
+  margin: 0;
+  font-family: "Poppins", 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fcfcfc;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+.movies {
+  background-color: red;
+  height:100px;
+}
+
+
+/******************************************************************************
+                        Header
+******************************************************************************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    height: 50px;
+    padding: 7px;
+  }
+  .icon:hover {
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+}
+
+.tech-logo {
+  height: 70px;
+  background-repeat: no-repeat;
+}
+
+
+/******************************************************************************
+                        Hero Banner
+******************************************************************************/
+
+.hero {
+  display: flex;
+
+  h1 {
+    font-size: 34px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.hero-bg {
+    /* background-image: url(./assets/img/bg1blue.jpg); */
+  background-color: #e67b00;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #007bff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease; 
+  
+}
+
+.hero-box {
+  position: absolute;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  width: 140px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease; 
+  background-color: #f9f9f9; 
+  color: #007bff; 
+  cursor: pointer;
+}
+
+
+
+.primary-button {
+  background-color: #f9f9f9; 
+}
+
+.secondary-button {
+  background-color: #007bff; 
+  color: #f9f9f9;
+}
+
+button:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+/******************************************************************************
+                        Gallery
+******************************************************************************/
+
+
+.gallery-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery-box {
+  padding: 10px 10px;
+  width: 22%;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  p {
+    text-align: left;
+  }
+}
+
+.gallery-box img {
+  height: 300px;
+  width: 200px;
+}
+
+.gallery-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery-box {
+  padding: 10px;
+  width: 22%;
+  border: 1px solid #dddddd; 
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease; 
+}
+
+.gallery-box:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.gallery-box img {
+  height: 300px;
+  width: 100%;
+}
+
+.gallery-box .title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.gallery-box .description {
+  margin-top: 5px;
+}
+
+/******************************************************************************
+                        Footer
+******************************************************************************/
+
+footer {
+  background-color: #f7f7f7;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
